@@ -30,6 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           title: Text('Chamados Potencial Florestal'),
           backgroundColor: Color.fromRGBO(0, 168, 89, 1),
           actions: [
@@ -40,14 +41,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(Icons.close)),
           ],
         ),
-        // floatingActionButton: FloatingActionButton.extended(
-        //   backgroundColor: Color.fromRGBO(0, 168, 89, 1),
-        //   label: Text("Home"),
-        //   icon: Icon(Icons.home),
-        //   onPressed: () {
-        //     _webViewController.loadUrl(_url);
-        //   },
-        // ),
+        floatingActionButton: FloatingActionButton.extended(
+          backgroundColor: Color.fromRGBO(0, 168, 89, 1),
+          label: Text("Home"),
+          icon: Icon(Icons.home),
+          onPressed: () {
+            _webViewController.loadUrl(_url);
+          },
+        ),
         body: _body());
   }
 
